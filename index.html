@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HerramientasOnline | Crea y Usa Herramientas con IA</title>
+    <title>HerramientasOnline | Catálogo de Herramientas Digitales</title>
     <meta name="description"
-        content="El sitio donde usar herramientas es gratis y crearlas con Inteligencia Artificial es muy fácil.">
+        content="El sitio donde encontrarás todas las herramientas digitales gratuitas en un solo lugar.">
 
-    <!-- Modern Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Phosphor Icons para íconos bonitos -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
@@ -29,8 +27,7 @@
                 <span>HerramientasOnline</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#explorar">Explorar</a></li>
-                <li><a href="#crear" class="btn-outline">Crear con IA <i class="ph-bold ph-sparkle"></i></a></li>
+                <li><a href="#explorar">Catálogo</a></li>
             </ul>
         </div>
     </nav>
@@ -39,82 +36,39 @@
     <header class="hero">
         <div class="hero-content">
             <h1>Todo lo que necesitas,<br><span>en un solo lugar.</span></h1>
-            <p>Muchas personas no tienen acceso a herramientas digitales. Aquí puedes usar herramientas listas para
-                usar, o mejor aún: <strong>crear tus propias herramientas usando Inteligencia Artificial.</strong></p>
+            <p>Descubre nuestro extenso catálogo de herramientas rápidas, gratuitas y listas para usar. Simplifica tu
+                día a día con utilidades locales y seguras.</p>
             <div class="hero-buttons">
-                <a href="#crear" class="btn-primary">Crear Nueva Herramienta</a>
-                <a href="#explorar" class="btn-secondary">Ver Catálogo</a>
+                <a href="#explorar" class="btn-primary">Explorar Catálogo</a>
             </div>
         </div>
         <div class="hero-visual">
-            <div class="floating-card c1"><i class="ph ph-calculator"></i> Calculadora</div>
-            <div class="floating-card c2"><i class="ph ph-text-aa"></i> Contador de Palabras</div>
-            <div class="floating-card c3 highlight"><i class="ph-bold ph-sparkle"></i> ¡Genera la tuya!</div>
+            <div class="floating-card c1"><i class="ph-bold ph-calculator"></i> Calculadora</div>
+            <div class="floating-card c2"><i class="ph-bold ph-text-aa"></i> Contador de Palabras</div>
+            <div class="floating-card c3 highlight" style="border: 2px solid var(--accent-blue);"><i
+                    class="ph-bold ph-timer"></i> Cronómetro PRO</div>
         </div>
     </header>
-
-    <!-- Sección de Creación con IA -->
-    <section id="crear" class="ai-creator-section">
-        <div class="container text-center">
-            <h2>Crea tu herramienta soñada</h2>
-            <p class="section-subtitle">Dime qué necesitas, y la IA escribirá el código por ti al instante.</p>
-
-            <div class="ai-box">
-                <div class="creator-form">
-                    <div class="input-group">
-                        <i class="ph-bold ph-robot"></i>
-                        <input type="text" id="ai-prompt" placeholder="Ej: Quiero una app que cuente las letras..."
-                            autocomplete="off">
-                    </div>
-
-                    <div class="optional-fields">
-                        <p class="optional-title">Opcional: Personaliza cómo se verá en el catálogo</p>
-                        <input type="text" id="tool-name" placeholder="Nombre completo (ej: Mi Súper Contador)"
-                            class="input-styled">
-                        <input type="text" id="tool-desc" placeholder="Descripción breve" class="input-styled">
-
-                        <div class="file-upload-wrapper">
-                            <label for="tool-img" class="btn-outline file-btn"><i class="ph-bold ph-upload-simple"></i>
-                                Subir Imagen/Ícono</label>
-                            <input type="file" id="tool-img" accept="image/*" class="hidden-file">
-                            <span id="file-name-display">Ninguna imagen seleccionada</span>
-                        </div>
-                    </div>
-
-                    <button id="btn-generate" class="btn-primary full-width">Generar Herramienta con IA</button>
-                </div>
-
-                <!-- Área donde se muestra el "proceso" o resultado simulado -->
-                <div id="ai-result" class="hidden">
-                    <div class="loader-box">
-                        <div class="spinner"></div>
-                        <p>La IA está programando tu herramienta...</p>
-                    </div>
-                </div>
-
-                <div id="success-result" class="hidden success-box">
-                    <i class="ph-fill ph-check-circle success-icon"></i>
-                    <h3>¡Herramienta Creada con Éxito!</h3>
-                    <p>Tu herramienta se ha añadido a tu colección.</p>
-                    <div style="display:flex; gap:10px; justify-content:center; margin-top:20px;">
-                        <button class="btn-primary" onclick="scrollToCatalog()">Ver en el Catálogo</button>
-                        <button class="btn-outline" onclick="resetCreator()">Crear otra</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Catálogo de Herramientas Existentes -->
     <section id="explorar" class="catalog-section">
         <div class="container">
-            <h2>Explora las Herramientas</h2>
-            <p class="section-subtitle">Úsalas gratis ahora mismo</p>
+            <h2>Catálogo de Herramientas</h2>
+            <p class="section-subtitle">Úsalas gratis ahora mismo. Rápidas, seguras y locales.</p>
 
-            <div class="tools-grid">
+            <!-- Buscador de Herramientas -->
+            <div class="search-container" style="max-width: 600px; margin: 30px auto; position: relative;">
+                <i class="ph-bold ph-magnifying-glass"
+                    style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); font-size: 1.2rem; color: var(--text-muted);"></i>
+                <input type="text" id="search-tools" placeholder="Buscar herramienta (ej. código QR, calculadora...)"
+                    style="width: 100%; padding: 15px 15px 15px 45px; border-radius: 12px; border: 2px solid var(--border-color); font-size: 1.1rem; outline: none; transition: border-color 0.3s; color: var(--text-dark); background: white;">
+            </div>
+
+            <div class="tools-grid" id="catalog-grid">
                 <!-- Herramienta 1 -->
-                <div class="tool-card">
-                    <div class="tool-icon"><i class="ph-bold ph-calculator"></i></div>
+                <div class="tool-card" data-title="Calculadora de Porcentajes"
+                    data-desc="porcentaje matematica numeros sacar">
+                    <div class="tool-icon"><i class="ph-bold ph-percent"></i></div>
                     <h3>Calculadora de %</h3>
                     <p>Saca el porcentaje rápido de cualquier cantidad.</p>
                     <button class="btn-text" onclick="openTool('calc')">Usar Herramienta <i
@@ -122,16 +76,17 @@
                 </div>
 
                 <!-- Herramienta 2 -->
-                <div class="tool-card">
+                <div class="tool-card" data-title="Generador QR" data-desc="qr codigo celular escanear link url">
                     <div class="tool-icon"><i class="ph-bold ph-qr-code"></i></div>
                     <h3>Generador QR</h3>
-                    <p>Convierte cualquier link de internet en un código QR para escanear.</p>
+                    <p>Convierte cualquier link en un código QR para escanear.</p>
                     <button class="btn-text" onclick="openTool('qr')">Usar Herramienta <i
                             class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
                 <!-- Herramienta 3 -->
-                <div class="tool-card">
+                <div class="tool-card" data-title="Generador de Paletas"
+                    data-desc="color paleta diseño rgb hex pintura">
                     <div class="tool-icon"><i class="ph-bold ph-palette"></i></div>
                     <h3>Generador de Paletas</h3>
                     <p>Descubre colores increíbles para usar en tus diseños.</p>
@@ -139,8 +94,9 @@
                             class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 4 (NUEVA) -->
-                <div class="tool-card">
+                <!-- Herramienta 4 -->
+                <div class="tool-card" data-title="Contraseñas Seguras"
+                    data-desc="password contraseña seguridad key clave generador">
                     <div class="tool-icon"><i class="ph-bold ph-lock-key"></i></div>
                     <h3>Contraseñas</h3>
                     <p>Genera contraseñas fuertes, seguras y difíciles de adivinar.</p>
@@ -148,22 +104,122 @@
                             class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 5 (NUEVA) -->
-                <div class="tool-card">
+                <!-- Herramienta 5 -->
+                <div class="tool-card" data-title="Cronómetro"
+                    data-desc="tiempo reloj medir cronometro segundos minutos">
                     <div class="tool-icon"><i class="ph-bold ph-timer"></i></div>
                     <h3>Cronómetro</h3>
-                    <p>Mide el tiempo exacto para tus rutinas o pomodoros.</p>
+                    <p>Mide el tiempo exacto para tus rutinas o tareas.</p>
                     <button class="btn-text" onclick="openTool('cronometro')">Usar Herramienta <i
                             class="ph-bold ph-arrow-right"></i></button>
                 </div>
+
+                <!-- Herramienta 6 -->
+                <div class="tool-card" data-title="Calculadora IMC" data-desc="peso salud masa corporal fitness dieta">
+                    <div class="tool-icon"><i class="ph-bold ph-scales"></i></div>
+                    <h3>Calculadora IMC</h3>
+                    <p>Averigua tu Índice de Masa Corporal de forma fácil.</p>
+                    <button class="btn-text" onclick="openTool('imc')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+                <!-- Herramienta 7 -->
+                <div class="tool-card" data-title="Reloj Pomodoro"
+                    data-desc="pomodoro estudiar concentracion tiempo trabajo descanso reloj">
+                    <div class="tool-icon"><i class="ph-bold ph-clock-countdown"></i></div>
+                    <h3>Reloj Pomodoro</h3>
+                    <p>Técnica de 25 min para maximizar tu concentración.</p>
+                    <button class="btn-text" onclick="openTool('pomodoro')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+                <!-- Herramienta 8 -->
+                <div class="tool-card" data-title="Listas de Tareas (To-Do)"
+                    data-desc="tareas notas apuntes check list hacer organizacion do">
+                    <div class="tool-icon"><i class="ph-bold ph-check-square"></i></div>
+                    <h3>Lista de Tareas</h3>
+                    <p>Anota lo que tienes que hacer para no olvidarlo y táchalo al terminar.</p>
+                    <button class="btn-text" onclick="openTool('tareas')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+                <!-- Herramienta 9 -->
+                <div class="tool-card" data-title="Conversor de Moneda"
+                    data-desc="moneda divisa dinero dolares euros pesos cambio">
+                    <div class="tool-icon"><i class="ph-bold ph-currency-circle-dollar"></i></div>
+                    <h3>Conversor de Moneda</h3>
+                    <p>Calcula y convierte el cambio aproximado entre distintas monedas.</p>
+                    <button class="btn-text" onclick="openTool('moneda')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+                <!-- Herramienta 10 -->
+                <div class="tool-card" data-title="Anotador Rápido"
+                    data-desc="notas texto bloc de notas escribir borrador portapapeles copiadora">
+                    <div class="tool-icon"><i class="ph-bold ph-notepad"></i></div>
+                    <h3>Anotador Rápido</h3>
+                    <p>Escribe, borra y copia notas temporalmente directo en pantalla.</p>
+                    <button class="btn-text" onclick="openTool('universal')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+                <!-- Herramienta 11 -->
+                <div class="tool-card" data-title="Calculadora Básica"
+                    data-desc="calc calcular numeros sumar algebra restas">
+                    <div class="tool-icon"><i class="ph-bold ph-calculator"></i></div>
+                    <h3>Calculadora</h3>
+                    <p>Realiza operaciones matemáticas simples y rápidas.</p>
+                    <button class="btn-text" onclick="openTool('calculadora')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+                <!-- Herramienta 12 -->
+                <div class="tool-card" data-title="Generador Lorem Ipsum"
+                    data-desc="lorem ipsum texto falso relleno diseño web paragrafo">
+                    <div class="tool-icon"><i class="ph-bold ph-text-align-left"></i></div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Crea texto de relleno automático para tus diseños o maquetaciones.</p>
+                    <button class="btn-text" onclick="openTool('lorem')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+                <!-- Herramienta 13 -->
+                <div class="tool-card" data-title="Lanzar Dados"
+                    data-desc="juego dados azar random suerte lanzamiento 6 caras">
+                    <div class="tool-icon"><i class="ph-bold ph-cube"></i></div>
+                    <h3>Lanzar Dados</h3>
+                    <p>Obtén un número al azar (1 a 6) lanzando dados virtuales instantáneos.</p>
+                    <button class="btn-text" onclick="openTool('dados')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+                <!-- Herramienta 14 -->
+                <div class="tool-card" data-title="Cara o Cruz"
+                    data-desc="moneda azar suerte decidir eleccion tirada cara cruz volado">
+                    <div class="tool-icon"><i class="ph-bold ph-coin"></i></div>
+                    <h3>Cara o Cruz</h3>
+                    <p>Lanza una moneda virtual al aire para tomar decisiones ágilmente.</p>
+                    <button class="btn-text" onclick="openTool('moneda_azar')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
+                <!-- Herramienta 15 -->
+                <div class="tool-card" data-title="Contador de Texto"
+                    data-desc="letras caracteres contador texto SEO palabras word longuitud">
+                    <div class="tool-icon"><i class="ph-bold ph-text-aa"></i></div>
+                    <h3>Contador de Texto</h3>
+                    <p>Cuenta la cantidad de palabras y caracteres para tus redacciones o SEO.</p>
+                    <button class="btn-text" onclick="openTool('contador')">Usar Herramienta <i
+                            class="ph-bold ph-arrow-right"></i></button>
+                </div>
+
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container text-center">
-            <p>&copy; 2026 HerramientasOnline.com. Tu primer proyecto más allá de Scratch.</p>
-            <p style="margin-top:10px; font-size:0.8rem;">Desarrollado con IA Real (Todo en Uno)</p>
+            <p>&copy; 2026 HerramientasOnline.</p>
         </div>
     </footer>
 
@@ -172,7 +228,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div id="tool-modal-body">
-                <!-- Aquí se inyecta la herramienta escogida mediante JavaScript -->
+                <!-- Aquí se inyecta la herramienta -->
             </div>
         </div>
     </div>
