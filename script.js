@@ -29,7 +29,7 @@ const i18n = {
         t_dice_title: "Lanzar Dados", t_dice_desc: "Obtén un número al azar (1 a 6) lanzando dados virtuales instantáneos.",
         t_coin_title: "Cara o Cruz", t_coin_desc: "Lanza una moneda virtual al aire para tomar decisiones ágilmente.",
         t_count_title: "Contador de Texto", t_count_desc: "Cuenta la cantidad de palabras y caracteres para tus redacciones o SEO.",
-        footer: "© 2026 HerramientasOnline. Mega Catálogo 100% Offline."
+        footer: "@ 2026 HerramientasOnline."
     },
     en: {
         logo: "ToolsOnline",
@@ -58,7 +58,7 @@ const i18n = {
         t_dice_title: "Roll Dice", t_dice_desc: "Get an instant random number (1 to 6) by throwing virtual dice.",
         t_coin_title: "Flip a Coin", t_coin_desc: "Flip a virtual coin to make quick decisions.",
         t_count_title: "Text Counter", t_count_desc: "Count the total words and characters for your articles or SEO.",
-        footer: "© 2026 ToolsOnline. 100% Offline Mega Catalog."
+        footer: "@ 2026 HerramientasOnline."
     }
 };
 
@@ -256,7 +256,51 @@ window.openTool = function(toolId) {
     
     // Si la herramienta está en las plantillas HTML (iframes complejas)
     if (LOCAL_TEMPLATES[toolId]) {
-        const htmlCode = LOCAL_TEMPLATES[toolId];
+        let htmlCode = LOCAL_TEMPLATES[toolId];
+        
+        if (lang === 'en') {
+            htmlCode = htmlCode
+                .replace('Reloj Pomodoro', 'Pomodoro Timer')
+                .replace('Iniciar', 'Start')
+                .replace('Pausar', 'Pause')
+                .replace('Reiniciar', 'Reset')
+                .replace('Gestor de Tareas', 'Task Manager')
+                .replace('¿Qué necesitas hacer?', 'What do you need to do?')
+                .replace('Añadir Tarea', 'Add Task')
+                .replace('Calculadora IMC', 'BMI Calculator')
+                .replace('Peso (kg):', 'Weight (kg):')
+                .replace('Altura (cm):', 'Height (cm):')
+                .replace('Calcular mi IMC', 'Calculate my BMI')
+                .replace('Tu IMC es:', 'Your BMI is:')
+                .replace('Ingresa valores válidos', 'Enter valid values')
+                .replace('Bajo peso', 'Underweight')
+                .replace('Peso Normal', 'Normal Weight')
+                .replace('Sobrepeso', 'Overweight')
+                .replace('Obesidad', 'Obesity')
+                .replace('Conversor de Divisas', 'Currency Converter')
+                .replace('Tasas de cambio aproximadas', 'Approximate exchange rates')
+                .replace('Monto', 'Amount')
+                .replace('Convertir', 'Convert')
+                .replace('Anotador Rápido', 'Quick Notes')
+                .replace('Escribe aquí... (Es temporal y privado)', 'Write here... (It is temporary and private)')
+                .replace('Copiar Todo', 'Copy All')
+                .replace('Borrador auto-guardado 💾', 'Auto-saved draft 💾')
+                .replace('¡Copiado!', 'Copied!')
+                .replace('Generador de Lorem Ipsum', 'Lorem Ipsum Generator')
+                .replace('Generar Párrafos', 'Generate Paragraphs')
+                .replace('El texto aparecerá aquí...', 'Text will appear here...')
+                .replace('Lanzador de Dados', 'Dice Roller')
+                .replace('Lanzar Dado', 'Roll Dice')
+                .replace('Cara o Cruz', 'Heads or Tails')
+                .replace('Lanzar al Aire', 'Flip Coin')
+                .replace('CARA', 'HEADS')
+                .replace('CRUZ', 'TAILS')
+                .replace('Contador de Texto', 'Word Counter')
+                .replace('Pega o escribe tu texto aquí para contarlo...', 'Paste or type your text here to count it...')
+                .replace('Palabras', 'Words')
+                .replace('Caracteres', 'Characters');
+        }
+
         modalBody.innerHTML = `
             <div class="tool-ui" style="padding:0; height:80vh; width: 100%; display:flex; flex-direction:column; overflow:hidden;">
                 <iframe 
