@@ -27,7 +27,11 @@
                 <span>HerramientasOnline</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#explorar">Catálogo</a></li>
+                <li><a href="#explorar" class="nav-text" data-i18n="nav_catalog">Catálogo</a></li>
+                <li><button id="lang-toggle" class="icon-btn" title="ES/EN"><i
+                            class="ph-bold ph-translate"></i></button></li>
+                <li><button id="theme-toggle" class="icon-btn" title="Modo Oscuro/Claro"><i
+                            class="ph-bold ph-moon"></i></button></li>
             </ul>
         </div>
     </nav>
@@ -35,182 +39,203 @@
     <!-- Header / Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <h1>Todo lo que necesitas,<br><span>en un solo lugar.</span></h1>
-            <p>Descubre nuestro extenso catálogo de herramientas rápidas, gratuitas y listas para usar. Simplifica tu
-                día a día con utilidades locales y seguras.</p>
+            <h1 data-i18n="hero_title">Todo lo que necesitas,<br><span>en un solo lugar.</span></h1>
+            <p data-i18n="hero_desc">Descubre nuestro extenso catálogo de herramientas rápidas, gratuitas y listas para
+                usar. Simplifica tu día a día con utilidades locales y seguras.</p>
             <div class="hero-buttons">
-                <a href="#explorar" class="btn-primary">Explorar Catálogo</a>
+                <a href="#explorar" class="btn-primary" data-i18n="hero_btn">Explorar Catálogo</a>
             </div>
         </div>
         <div class="hero-visual">
-            <div class="floating-card c1"><i class="ph-bold ph-calculator"></i> Calculadora</div>
-            <div class="floating-card c2"><i class="ph-bold ph-text-aa"></i> Contador de Palabras</div>
+            <div class="floating-card c1"><i class="ph-bold ph-calculator"></i> <span
+                    data-i18n="float_calc">Calculadora</span></div>
+            <div class="floating-card c2"><i class="ph-bold ph-text-aa"></i> <span data-i18n="float_text">Contador de
+                    Palabras</span></div>
             <div class="floating-card c3 highlight" style="border: 2px solid var(--accent-blue);"><i
-                    class="ph-bold ph-timer"></i> Cronómetro PRO</div>
+                    class="ph-bold ph-timer"></i> <span data-i18n="float_timer">Cronómetro PRO</span></div>
         </div>
     </header>
 
     <!-- Catálogo de Herramientas Existentes -->
     <section id="explorar" class="catalog-section">
         <div class="container">
-            <h2>Catálogo de Herramientas</h2>
-            <p class="section-subtitle">Úsalas gratis ahora mismo. Rápidas, seguras y locales.</p>
+            <h2 data-i18n="cat_title">Catálogo de Herramientas</h2>
+            <p class="section-subtitle" data-i18n="cat_subtitle">Úsalas gratis ahora mismo. Rápidas, seguras y locales.
+            </p>
+
+            <!-- Categorías -->
+            <div class="category-tabs" id="category-tabs">
+                <button class="cat-btn active" data-cat="all" data-i18n="tab_all">Todas</button>
+                <button class="cat-btn" data-cat="math" data-i18n="tab_math">🔢 Matemáticas</button>
+                <button class="cat-btn" data-cat="productivity" data-i18n="tab_prod">⚡ Productividad</button>
+                <button class="cat-btn" data-cat="design" data-i18n="tab_design">🎨 Diseño/Texto</button>
+                <button class="cat-btn" data-cat="util" data-i18n="tab_util">🎲 Utilidades</button>
+            </div>
 
             <!-- Buscador de Herramientas -->
             <div class="search-container" style="max-width: 600px; margin: 30px auto; position: relative;">
                 <i class="ph-bold ph-magnifying-glass"
                     style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); font-size: 1.2rem; color: var(--text-muted);"></i>
                 <input type="text" id="search-tools" placeholder="Buscar herramienta (ej. código QR, calculadora...)"
-                    style="width: 100%; padding: 15px 15px 15px 45px; border-radius: 12px; border: 2px solid var(--border-color); font-size: 1.1rem; outline: none; transition: border-color 0.3s; color: var(--text-dark); background: white;">
+                    data-i18n-ph="search_ph"
+                    style="width: 100%; padding: 15px 15px 15px 45px; border-radius: 12px; border: 2px solid var(--border-color); font-size: 1.1rem; outline: none; transition: border-color 0.3s; color: var(--text-dark); background: var(--card-bg);">
             </div>
 
+            <!-- GRILLA DE HERRAMIENTAS -->
             <div class="tools-grid" id="catalog-grid">
-                <!-- Herramienta 1 -->
-                <div class="tool-card" data-title="Calculadora de Porcentajes"
-                    data-desc="porcentaje matematica numeros sacar">
+
+                <div class="tool-card" data-id="tool-calc-perc" data-category="math"
+                    data-title="Calculadora de Porcentajes" data-desc="porcentaje matematica numeros sacar">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-percent"></i></div>
-                    <h3>Calculadora de %</h3>
-                    <p>Saca el porcentaje rápido de cualquier cantidad.</p>
-                    <button class="btn-text" onclick="openTool('calc')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_calc_perc_title">Calculadora de %</h3>
+                    <p data-i18n="t_calc_perc_desc">Saca el porcentaje rápido de cualquier cantidad.</p>
+                    <button class="btn-text" onclick="openTool('calc')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 2 -->
-                <div class="tool-card" data-title="Generador QR" data-desc="qr codigo celular escanear link url">
+                <div class="tool-card" data-id="tool-qr" data-category="util" data-title="Generador QR"
+                    data-desc="qr codigo celular escanear link url">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-qr-code"></i></div>
-                    <h3>Generador QR</h3>
-                    <p>Convierte cualquier link en un código QR para escanear.</p>
-                    <button class="btn-text" onclick="openTool('qr')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_qr_title">Generador QR</h3>
+                    <p data-i18n="t_qr_desc">Convierte cualquier link en un código QR para escanear.</p>
+                    <button class="btn-text" onclick="openTool('qr')"><span data-i18n="use_tool">Usar Herramienta</span>
+                        <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 3 -->
-                <div class="tool-card" data-title="Generador de Paletas"
+                <div class="tool-card" data-id="tool-palette" data-category="design" data-title="Generador de Paletas"
                     data-desc="color paleta diseño rgb hex pintura">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-palette"></i></div>
-                    <h3>Generador de Paletas</h3>
-                    <p>Descubre colores increíbles para usar en tus diseños.</p>
-                    <button class="btn-text" onclick="openTool('palette')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_pal_title">Generador de Paletas</h3>
+                    <p data-i18n="t_pal_desc">Descubre colores increíbles para usar en tus diseños.</p>
+                    <button class="btn-text" onclick="openTool('palette')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 4 -->
-                <div class="tool-card" data-title="Contraseñas Seguras"
+                <div class="tool-card" data-id="tool-pass" data-category="util" data-title="Contraseñas Seguras"
                     data-desc="password contraseña seguridad key clave generador">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-lock-key"></i></div>
-                    <h3>Contraseñas</h3>
-                    <p>Genera contraseñas fuertes, seguras y difíciles de adivinar.</p>
-                    <button class="btn-text" onclick="openTool('password')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_pass_title">Contraseñas</h3>
+                    <p data-i18n="t_pass_desc">Genera contraseñas fuertes, seguras y difíciles de adivinar.</p>
+                    <button class="btn-text" onclick="openTool('password')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 5 -->
-                <div class="tool-card" data-title="Cronómetro"
+                <div class="tool-card" data-id="tool-timer" data-category="productivity" data-title="Cronómetro"
                     data-desc="tiempo reloj medir cronometro segundos minutos">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-timer"></i></div>
-                    <h3>Cronómetro</h3>
-                    <p>Mide el tiempo exacto para tus rutinas o tareas.</p>
-                    <button class="btn-text" onclick="openTool('cronometro')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_timer_title">Cronómetro</h3>
+                    <p data-i18n="t_timer_desc">Mide el tiempo exacto para tus rutinas o tareas.</p>
+                    <button class="btn-text" onclick="openTool('cronometro')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 6 -->
-                <div class="tool-card" data-title="Calculadora IMC" data-desc="peso salud masa corporal fitness dieta">
+                <div class="tool-card" data-id="tool-imc" data-category="math" data-title="Calculadora IMC"
+                    data-desc="peso salud masa corporal fitness dieta">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-scales"></i></div>
-                    <h3>Calculadora IMC</h3>
-                    <p>Averigua tu Índice de Masa Corporal de forma fácil.</p>
-                    <button class="btn-text" onclick="openTool('imc')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_imc_title">Calculadora IMC</h3>
+                    <p data-i18n="t_imc_desc">Averigua tu Índice de Masa Corporal de forma fácil.</p>
+                    <button class="btn-text" onclick="openTool('imc')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 7 -->
-                <div class="tool-card" data-title="Reloj Pomodoro"
+                <div class="tool-card" data-id="tool-pomodoro" data-category="productivity" data-title="Reloj Pomodoro"
                     data-desc="pomodoro estudiar concentracion tiempo trabajo descanso reloj">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-clock-countdown"></i></div>
-                    <h3>Reloj Pomodoro</h3>
-                    <p>Técnica de 25 min para maximizar tu concentración.</p>
-                    <button class="btn-text" onclick="openTool('pomodoro')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_pom_title">Reloj Pomodoro</h3>
+                    <p data-i18n="t_pom_desc">Técnica de 25 min para maximizar tu concentración.</p>
+                    <button class="btn-text" onclick="openTool('pomodoro')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 8 -->
-                <div class="tool-card" data-title="Listas de Tareas (To-Do)"
+                <div class="tool-card" data-id="tool-todo" data-category="productivity"
+                    data-title="Listas de Tareas (To-Do)"
                     data-desc="tareas notas apuntes check list hacer organizacion do">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-check-square"></i></div>
-                    <h3>Lista de Tareas</h3>
-                    <p>Anota lo que tienes que hacer para no olvidarlo y táchalo al terminar.</p>
-                    <button class="btn-text" onclick="openTool('tareas')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_todo_title">Lista de Tareas</h3>
+                    <p data-i18n="t_todo_desc">Anota lo que tienes que hacer para no olvidarlo y táchalo al terminar.
+                    </p>
+                    <button class="btn-text" onclick="openTool('tareas')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 9 -->
-                <div class="tool-card" data-title="Conversor de Moneda"
+                <div class="tool-card" data-id="tool-currency" data-category="math" data-title="Conversor de Moneda"
                     data-desc="moneda divisa dinero dolares euros pesos cambio">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-currency-circle-dollar"></i></div>
-                    <h3>Conversor de Moneda</h3>
-                    <p>Calcula y convierte el cambio aproximado entre distintas monedas.</p>
-                    <button class="btn-text" onclick="openTool('moneda')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_cur_title">Conversor de Moneda</h3>
+                    <p data-i18n="t_cur_desc">Calcula y convierte el cambio aproximado entre distintas monedas.</p>
+                    <button class="btn-text" onclick="openTool('moneda')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 10 -->
-                <div class="tool-card" data-title="Anotador Rápido"
+                <div class="tool-card" data-id="tool-notes" data-category="productivity" data-title="Anotador Rápido"
                     data-desc="notas texto bloc de notas escribir borrador portapapeles copiadora">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-notepad"></i></div>
-                    <h3>Anotador Rápido</h3>
-                    <p>Escribe, borra y copia notas temporalmente directo en pantalla.</p>
-                    <button class="btn-text" onclick="openTool('universal')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_note_title">Anotador Rápido</h3>
+                    <p data-i18n="t_note_desc">Escribe, borra y copia notas temporalmente directo en pantalla.</p>
+                    <button class="btn-text" onclick="openTool('universal')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 11 -->
-                <div class="tool-card" data-title="Calculadora Básica"
+                <div class="tool-card" data-id="tool-calc-basic" data-category="math" data-title="Calculadora Básica"
                     data-desc="calc calcular numeros sumar algebra restas">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-calculator"></i></div>
-                    <h3>Calculadora</h3>
-                    <p>Realiza operaciones matemáticas simples y rápidas.</p>
-                    <button class="btn-text" onclick="openTool('calculadora')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_calcb_title">Calculadora</h3>
+                    <p data-i18n="t_calcb_desc">Realiza operaciones matemáticas simples y rápidas.</p>
+                    <button class="btn-text" onclick="openTool('calculadora')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 12 -->
-                <div class="tool-card" data-title="Generador Lorem Ipsum"
+                <div class="tool-card" data-id="tool-lorem" data-category="design" data-title="Generador Lorem Ipsum"
                     data-desc="lorem ipsum texto falso relleno diseño web paragrafo">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-text-align-left"></i></div>
-                    <h3>Lorem Ipsum</h3>
-                    <p>Crea texto de relleno automático para tus diseños o maquetaciones.</p>
-                    <button class="btn-text" onclick="openTool('lorem')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_lorem_title">Lorem Ipsum</h3>
+                    <p data-i18n="t_lorem_desc">Crea texto de relleno automático para tus diseños o maquetaciones.</p>
+                    <button class="btn-text" onclick="openTool('lorem')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 13 -->
-                <div class="tool-card" data-title="Lanzar Dados"
+                <div class="tool-card" data-id="tool-dice" data-category="util" data-title="Lanzar Dados"
                     data-desc="juego dados azar random suerte lanzamiento 6 caras">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-cube"></i></div>
-                    <h3>Lanzar Dados</h3>
-                    <p>Obtén un número al azar (1 a 6) lanzando dados virtuales instantáneos.</p>
-                    <button class="btn-text" onclick="openTool('dados')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_dice_title">Lanzar Dados</h3>
+                    <p data-i18n="t_dice_desc">Obtén un número al azar (1 a 6) lanzando dados virtuales instantáneos.
+                    </p>
+                    <button class="btn-text" onclick="openTool('dados')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 14 -->
-                <div class="tool-card" data-title="Cara o Cruz"
+                <div class="tool-card" data-id="tool-coin" data-category="util" data-title="Cara o Cruz"
                     data-desc="moneda azar suerte decidir eleccion tirada cara cruz volado">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-coin"></i></div>
-                    <h3>Cara o Cruz</h3>
-                    <p>Lanza una moneda virtual al aire para tomar decisiones ágilmente.</p>
-                    <button class="btn-text" onclick="openTool('moneda_azar')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_coin_title">Cara o Cruz</h3>
+                    <p data-i18n="t_coin_desc">Lanza una moneda virtual al aire para tomar decisiones ágilmente.</p>
+                    <button class="btn-text" onclick="openTool('moneda_azar')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
-                <!-- Herramienta 15 -->
-                <div class="tool-card" data-title="Contador de Texto"
+                <div class="tool-card" data-id="tool-counter" data-category="design" data-title="Contador de Texto"
                     data-desc="letras caracteres contador texto SEO palabras word longuitud">
+                    <button class="fav-btn"><i class="ph-fill ph-star"></i></button>
                     <div class="tool-icon"><i class="ph-bold ph-text-aa"></i></div>
-                    <h3>Contador de Texto</h3>
-                    <p>Cuenta la cantidad de palabras y caracteres para tus redacciones o SEO.</p>
-                    <button class="btn-text" onclick="openTool('contador')">Usar Herramienta <i
-                            class="ph-bold ph-arrow-right"></i></button>
+                    <h3 data-i18n="t_count_title">Contador de Texto</h3>
+                    <p data-i18n="t_count_desc">Cuenta la cantidad de palabras y caracteres para tus redacciones o SEO.
+                    </p>
+                    <button class="btn-text" onclick="openTool('contador')"><span data-i18n="use_tool">Usar
+                            Herramienta</span> <i class="ph-bold ph-arrow-right"></i></button>
                 </div>
 
             </div>
@@ -219,7 +244,7 @@
 
     <footer>
         <div class="container text-center">
-            <p>&copy; 2026 HerramientasOnline.</p>
+            <p data-i18n="footer">&copy; 2026 HerramientasOnline.</p>
         </div>
     </footer>
 
