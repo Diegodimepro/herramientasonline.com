@@ -187,7 +187,7 @@ window.addEventListener('DOMContentLoaded', () => {
             
             // Trigger secreto para panel de Analytics
             if (val === 'analytics') {
-                const p = prompt("Contraseña de acceso al Dashboard (escribe: admin o 1234):");
+                const p = prompt("Contraseña de acceso al Dashboard:");
                 if (p === "admin" || p === "1234") {
                     e.target.value = '';
                     executeFilters();
