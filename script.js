@@ -179,10 +179,36 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // ---- BUSCADOR DE TEXTO ----
+    let searchTimeout;
     const searchInput = document.getElementById('search-tools');
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
+            const val = e.target.value.toLowerCase().trim();
+            
+            // Trigger secreto para panel de Analytics
+            if (val === 'analytics') {
+                const p = prompt("Contraseña de acceso al Dashboard (escribe: admin o 1234):");
+                if (p === "admin" || p === "1234") {
+                    e.target.value = '';
+                    executeFilters();
+                    window.openAnalytics();
+                } else if (p !== null) {
+                    alert("Contraseña incorrecta.");
+                }
+                return;
+            }
+
             executeFilters();
+
+            // Trackear búsquedas locales (con debounce para no saturar con cada letra)
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                if(val.length > 2 && val !== 'analytics') {
+                    let sHistory = JSON.parse(localStorage.getItem('app_analytics_searches')) || {};
+                    sHistory[val] = (sHistory[val] || 0) + 1;
+                    localStorage.setItem('app_analytics_searches', JSON.stringify(sHistory));
+                }
+            }, 1000);
         });
     }
 
@@ -244,9 +270,14 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ========================
-   5. MANEJADOR PRINCIPAL DE HERRAMIENTAS
+   5. MANEJADOR PRINCIPAL DE HERRAMIENTAS Y ANALYTICS
 ======================== */
 window.openTool = function(toolId) {
+    // Analytics: Registrar herramienta usada
+    let tUsage = JSON.parse(localStorage.getItem('app_analytics_tools')) || {};
+    tUsage[toolId] = (tUsage[toolId] || 0) + 1;
+    localStorage.setItem('app_analytics_tools', JSON.stringify(tUsage));
+
     const modal = document.getElementById('tool-modal');
     const modalBody = document.getElementById('tool-modal-body');
     modal.classList.remove('hidden');
@@ -454,3 +485,76 @@ window.resetTimer = function() {
     const display = document.getElementById('timer-display');
     if(display) display.textContent = "00:00";
 }
+
+/* ========================
+   LOGICA DEL PANEL DE ANALYTICS
+======================== */
+window.openAnalytics = function() {
+    const aModal = document.getElementById('analytics-modal');
+    if(!aModal) return;
+    
+    aModal.classList.remove('hidden');
+
+    const tUsage = JSON.parse(localStorage.getItem('app_analytics_tools')) || {};
+    const sHistory = JSON.parse(localStorage.getItem('app_analytics_searches')) || {};
+
+    let totalUsos = 0;
+    for(let k in tUsage) totalUsos += tUsage[k];
+    
+    const countEl = document.getElementById('total-tools');
+    if(countEl) countEl.innerText = totalUsos;
+
+    const topToolsList = document.getElementById('analytics-top-tools');
+    const topSearchesList = document.getElementById('analytics-top-searches');
+    
+    if(topToolsList) topToolsList.innerHTML = '';
+    if(topSearchesList) topSearchesList.innerHTML = '';
+
+    // Render Herramientas Top
+    const sortedTools = Object.entries(tUsage).sort((a,b) => b[1] - a[1]).slice(0, 10);
+    if(sortedTools.length === 0 && topToolsList) {
+        topToolsList.innerHTML = '<li>No hay datos aún.</li>';
+    } else if(topToolsList) {
+        sortedTools.forEach(([tool, count]) => {
+            topToolsList.innerHTML += `<li style="display:flex; justify-content:space-between; margin-bottom:10px; border-bottom:1px solid var(--border-color); padding-bottom:5px;"><span>${tool.toUpperCase()}</span> <strong><span style="color:var(--primary-blue)">${count}</span> usos</strong></li>`;
+        });
+    }
+
+    // Render Búsquedas Top
+    const sortedSearches = Object.entries(sHistory).sort((a,b) => b[1] - a[1]).slice(0, 10);
+    if(sortedSearches.length === 0 && topSearchesList) {
+        topSearchesList.innerHTML = '<li>No hay búsquedas aún.</li>';
+    } else if(topSearchesList) {
+        sortedSearches.forEach(([search, count]) => {
+            topSearchesList.innerHTML += `<li style="display:flex; justify-content:space-between; margin-bottom:10px; border-bottom:1px solid var(--border-color); padding-bottom:5px;"><span>"${search}"</span> <strong><span style="color:var(--primary-blue)">${count}</span> veces</strong></li>`;
+        });
+    }
+}
+
+window.clearAnalytics = function() {
+    if(confirm('¿Estás seguro de que quieres borrar todos los datos de analytics? Esta acción no se puede deshacer.')) {
+        localStorage.removeItem('app_analytics_tools');
+        localStorage.removeItem('app_analytics_searches');
+        window.openAnalytics(); // Refresh panel
+    }
+}
+
+// Event Listeners for Analytics Modal
+window.addEventListener('DOMContentLoaded', () => {
+    const aModal = document.getElementById('analytics-modal');
+    const closeABtn = document.querySelector('.close-analytics');
+    
+    if(closeABtn) {
+        closeABtn.addEventListener('click', () => {
+            aModal.classList.add('hidden');
+        });
+    }
+    
+    if(aModal) {
+        window.addEventListener('click', (e) => {
+            if (e.target === aModal) {
+                aModal.classList.add('hidden');
+            }
+        });
+    }
+});
