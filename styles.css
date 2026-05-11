@@ -236,3 +236,32 @@ footer { background-color: var(--card-bg); padding: 30px 0; border-top: 1px soli
          . c 3   {   t o p :   4 0 % ;   l e f t :   1 5 % ;   w i d t h :   7 0 % ;   j u s t i f y - c o n t e n t :   c e n t e r ; } 
  }  
  
+/* Language Selector */
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+.lang-selector:hover { border-color: var(--primary-blue); }
+.lang-selector i { font-size: 1.1rem; color: var(--text-muted); }
+.lang-selector select {
+    background: transparent;
+    border: none;
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    padding: 2px 0;
+}
+.lang-selector select option {
+    background: var(--card-bg);
+    color: var(--text-dark);
+}

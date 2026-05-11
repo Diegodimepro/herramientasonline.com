@@ -28,8 +28,18 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#explorar" class="nav-text" data-i18n="nav_catalog">Catálogo</a></li>
-                <li><button id="lang-toggle" class="icon-btn" title="ES/EN"><i
-                            class="ph-bold ph-translate"></i></button></li>
+                <li>
+                    <div class="lang-selector">
+                        <i class="ph-bold ph-translate"></i>
+                        <select id="lang-select" title="Idioma / Language">
+                            <option value="es">ES 🇪🇸</option>
+                            <option value="en">EN 🇬🇧</option>
+                            <option value="pt">PT 🇧🇷</option>
+                            <option value="fr">FR 🇫🇷</option>
+                            <option value="de">DE 🇩🇪</option>
+                        </select>
+                    </div>
+                </li>
                 <li><button id="theme-toggle" class="icon-btn" title="Modo Oscuro/Claro"><i
                             class="ph-bold ph-moon"></i></button></li>
             </ul>

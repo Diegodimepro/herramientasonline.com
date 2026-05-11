@@ -75,6 +75,117 @@ const i18n = {
         t_case_title: "UPPER / lower", t_case_desc: "Convert text to uppercase, lowercase, or title case.",
         t_typing_title: "Typing Test", t_typing_desc: "Measure your typing speed in words per minute (WPM).",
         footer: "@ 2026 HerramientasOnline."
+    },
+    pt: {
+        logo: "FerramentasOnline",
+        nav_catalog: "Catálogo",
+        hero_title: "Tudo o que você precisa,<br><span>em um só lugar.</span>",
+        hero_desc: "Descubra nosso extenso catálogo de ferramentas rápidas, gratuitas e prontas para usar. Simplifique seu dia a dia com utilitários locais e seguros.",
+        hero_btn: "Explorar Catálogo",
+        float_calc: "Calculadora", float_text: "Contador de Palavras", float_timer: "Cronômetro PRO",
+        cat_title: "Catálogo de Ferramentas",
+        cat_subtitle: "Use de graça agora mesmo. Rápidas, seguras e locais.",
+        tab_all: "Todas", tab_math: "🔢 Matemática", tab_prod: "⚡ Produtividade", tab_design: "🎨 Design/Texto", tab_util: "🎲 Utilidades",
+        search_ph: "Buscar ferramenta (ex. código QR, calculadora...)",
+        use_tool: "Usar Ferramenta",
+        t_calc_perc_title: "Calculadora de %", t_calc_perc_desc: "Calcule a porcentagem rápida de qualquer quantidade.",
+        t_qr_title: "Gerador QR", t_qr_desc: "Converta qualquer link em um código QR para escanear.",
+        t_pal_title: "Gerador de Paletas", t_pal_desc: "Descubra cores incríveis para usar em seus designs.",
+        t_pass_title: "Senhas", t_pass_desc: "Gere senhas fortes, seguras e difíceis de adivinhar.",
+        t_timer_title: "Cronômetro", t_timer_desc: "Meça o tempo exato para suas rotinas ou tarefas.",
+        t_imc_title: "Calculadora IMC", t_imc_desc: "Descubra seu Índice de Massa Corporal facilmente.",
+        t_pom_title: "Relógio Pomodoro", t_pom_desc: "Técnica de 25 min para maximizar sua concentração.",
+        t_todo_title: "Lista de Tarefas", t_todo_desc: "Anote o que precisa fazer e risque ao terminar.",
+        t_cur_title: "Conversor de Moeda", t_cur_desc: "Calcule e converta o câmbio aproximado entre moedas.",
+        t_note_title: "Bloco de Notas", t_note_desc: "Escreva, apague e copie notas temporárias na tela. Salvo automaticamente.",
+        t_calcb_title: "Calculadora", t_calcb_desc: "Realize operações matemáticas simples e rápidas.",
+        t_lorem_title: "Lorem Ipsum", t_lorem_desc: "Crie texto de preenchimento automático para seus designs.",
+        t_dice_title: "Jogar Dados", t_dice_desc: "Obtenha um número aleatório (1 a 6) jogando dados virtuais.",
+        t_coin_title: "Cara ou Coroa", t_coin_desc: "Jogue uma moeda virtual para tomar decisões rápidas.",
+        t_count_title: "Contador de Texto", t_count_desc: "Conte a quantidade de palavras e caracteres para SEO.",
+        t_units_title: "Conversor de Unidades", t_units_desc: "Converta comprimento, peso e temperatura entre unidades.",
+        t_countdown_title: "Temporizador", t_countdown_desc: "Contagem regressiva configurável com alarme ao finalizar.",
+        t_random_title: "Números Aleatórios", t_random_desc: "Gere um número aleatório dentro do intervalo que escolher.",
+        t_base64_title: "Base64", t_base64_desc: "Codifique e decodifique texto em formato Base64 instantaneamente.",
+        t_mult_title: "Tabuada", t_mult_desc: "Consulte a tabuada de qualquer número rapidamente.",
+        t_age_title: "Calculadora de Idade", t_age_desc: "Calcule sua idade exata em anos, meses e dias.",
+        t_case_title: "MAIÚSC / minúsc", t_case_desc: "Converta texto para maiúsculas, minúsculas ou formato título.",
+        t_typing_title: "Teste de Digitação", t_typing_desc: "Meça sua velocidade de digitação em palavras por minuto (PPM).",
+        footer: "@ 2026 HerramientasOnline."
+    },
+    fr: {
+        logo: "OutilsEnLigne",
+        nav_catalog: "Catalogue",
+        hero_title: "Tout ce dont vous avez besoin,<br><span>en un seul endroit.</span>",
+        hero_desc: "Découvrez notre vaste catalogue d'outils rapides, gratuits et prêts à l'emploi. Simplifiez votre quotidien avec des utilitaires locaux et sécurisés.",
+        hero_btn: "Explorer le Catalogue",
+        float_calc: "Calculatrice", float_text: "Compteur de Mots", float_timer: "Chronomètre PRO",
+        cat_title: "Catalogue d'Outils",
+        cat_subtitle: "Utilisez-les gratuitement. Rapides, sécurisés et locaux.",
+        tab_all: "Tous", tab_math: "🔢 Maths", tab_prod: "⚡ Productivité", tab_design: "🎨 Design/Texte", tab_util: "🎲 Utilitaires",
+        search_ph: "Rechercher un outil (ex. code QR, calculatrice...)",
+        use_tool: "Utiliser l'Outil",
+        t_calc_perc_title: "Calculatrice de %", t_calc_perc_desc: "Calculez rapidement le pourcentage de n'importe quelle quantité.",
+        t_qr_title: "Générateur QR", t_qr_desc: "Convertissez n'importe quel lien en code QR scannable.",
+        t_pal_title: "Générateur de Palettes", t_pal_desc: "Découvrez des couleurs incroyables pour vos designs.",
+        t_pass_title: "Mots de Passe", t_pass_desc: "Générez des mots de passe forts et difficiles à deviner.",
+        t_timer_title: "Chronomètre", t_timer_desc: "Mesurez le temps exact pour vos routines ou tâches.",
+        t_imc_title: "Calculateur IMC", t_imc_desc: "Découvrez votre Indice de Masse Corporelle facilement.",
+        t_pom_title: "Minuteur Pomodoro", t_pom_desc: "Technique de 25 min pour maximiser votre concentration.",
+        t_todo_title: "Liste de Tâches", t_todo_desc: "Notez ce que vous devez faire et rayez une fois terminé.",
+        t_cur_title: "Convertisseur de Devises", t_cur_desc: "Calculez les taux de change approximatifs entre devises.",
+        t_note_title: "Bloc-Notes", t_note_desc: "Écrivez, effacez et copiez des notes temporaires à l'écran. Sauvegarde auto.",
+        t_calcb_title: "Calculatrice", t_calcb_desc: "Effectuez des opérations mathématiques simples et rapides.",
+        t_lorem_title: "Lorem Ipsum", t_lorem_desc: "Créez du texte de remplissage automatique pour vos maquettes.",
+        t_dice_title: "Lancer les Dés", t_dice_desc: "Obtenez un nombre aléatoire (1 à 6) en lançant des dés virtuels.",
+        t_coin_title: "Pile ou Face", t_coin_desc: "Lancez une pièce virtuelle pour prendre des décisions rapidement.",
+        t_count_title: "Compteur de Texte", t_count_desc: "Comptez le nombre de mots et de caractères pour le SEO.",
+        t_units_title: "Convertisseur d'Unités", t_units_desc: "Convertissez longueur, poids et température entre unités.",
+        t_countdown_title: "Minuteur", t_countdown_desc: "Compte à rebours configurable avec alarme à la fin.",
+        t_random_title: "Nombres Aléatoires", t_random_desc: "Générez un nombre aléatoire dans la plage de votre choix.",
+        t_base64_title: "Base64", t_base64_desc: "Encodez et décodez du texte en format Base64 instantanément.",
+        t_mult_title: "Table de Multiplication", t_mult_desc: "Consultez la table de multiplication de n'importe quel nombre.",
+        t_age_title: "Calculateur d'Âge", t_age_desc: "Calculez votre âge exact en années, mois et jours.",
+        t_case_title: "MAJUSC / minusc", t_case_desc: "Convertissez du texte en majuscules, minuscules ou format titre.",
+        t_typing_title: "Test de Frappe", t_typing_desc: "Mesurez votre vitesse de frappe en mots par minute (MPM).",
+        footer: "@ 2026 HerramientasOnline."
+    },
+    de: {
+        logo: "OnlineTools",
+        nav_catalog: "Katalog",
+        hero_title: "Alles was du brauchst,<br><span>an einem Ort.</span>",
+        hero_desc: "Entdecke unseren umfangreichen Katalog schneller, kostenloser und sofort einsatzbereiter Tools. Vereinfache deinen Alltag mit sicheren lokalen Dienstprogrammen.",
+        hero_btn: "Katalog Erkunden",
+        float_calc: "Taschenrechner", float_text: "Wortzähler", float_timer: "PRO Stoppuhr",
+        cat_title: "Werkzeug-Katalog",
+        cat_subtitle: "Kostenlos sofort nutzen. Schnell, sicher und lokal.",
+        tab_all: "Alle", tab_math: "🔢 Mathematik", tab_prod: "⚡ Produktivität", tab_design: "🎨 Design/Text", tab_util: "🎲 Hilfsmittel",
+        search_ph: "Werkzeug suchen (z.B. QR-Code, Rechner...)",
+        use_tool: "Werkzeug Nutzen",
+        t_calc_perc_title: "Prozentrechner", t_calc_perc_desc: "Berechne schnell den Prozentsatz jeder Menge.",
+        t_qr_title: "QR-Generator", t_qr_desc: "Verwandle jeden Link in einen scannbaren QR-Code.",
+        t_pal_title: "Paletten-Generator", t_pal_desc: "Entdecke tolle Farben für deine Designs.",
+        t_pass_title: "Passwörter", t_pass_desc: "Erstelle starke, sichere und schwer zu erratende Passwörter.",
+        t_timer_title: "Stoppuhr", t_timer_desc: "Messe die genaue Zeit für deine Routinen oder Aufgaben.",
+        t_imc_title: "BMI-Rechner", t_imc_desc: "Ermittle deinen Body-Mass-Index ganz einfach.",
+        t_pom_title: "Pomodoro-Timer", t_pom_desc: "25-Min-Technik zur Maximierung deiner Konzentration.",
+        t_todo_title: "Aufgabenliste", t_todo_desc: "Notiere Aufgaben und streiche sie ab, wenn erledigt.",
+        t_cur_title: "Währungsrechner", t_cur_desc: "Berechne ungefähre Wechselkurse zwischen Währungen.",
+        t_note_title: "Schnellnotizen", t_note_desc: "Schreibe, lösche und kopiere temporäre Notizen. Auto-gespeichert.",
+        t_calcb_title: "Taschenrechner", t_calcb_desc: "Führe einfache und schnelle Rechenoperationen durch.",
+        t_lorem_title: "Lorem Ipsum", t_lorem_desc: "Erstelle automatischen Platzhaltertext für deine Designs.",
+        t_dice_title: "Würfeln", t_dice_desc: "Erhalte eine Zufallszahl (1 bis 6) mit virtuellen Würfeln.",
+        t_coin_title: "Kopf oder Zahl", t_coin_desc: "Wirf eine virtuelle Münze für schnelle Entscheidungen.",
+        t_count_title: "Textzähler", t_count_desc: "Zähle die Anzahl der Wörter und Zeichen für SEO.",
+        t_units_title: "Einheitenrechner", t_units_desc: "Rechne Länge, Gewicht und Temperatur zwischen Einheiten um.",
+        t_countdown_title: "Countdown", t_countdown_desc: "Konfigurierbarer Countdown mit Alarm am Ende.",
+        t_random_title: "Zufallszahlen", t_random_desc: "Erzeuge eine Zufallszahl im Bereich deiner Wahl.",
+        t_base64_title: "Base64", t_base64_desc: "Kodiere und dekodiere Text im Base64-Format sofort.",
+        t_mult_title: "Einmaleins", t_mult_desc: "Schlage die Multiplikationstabelle jeder Zahl schnell nach.",
+        t_age_title: "Altersrechner", t_age_desc: "Berechne dein genaues Alter in Jahren, Monaten und Tagen.",
+        t_case_title: "GROß / klein", t_case_desc: "Konvertiere Text in Großbuchstaben, Kleinbuchstaben oder Titelformat.",
+        t_typing_title: "Tipptest", t_typing_desc: "Messe deine Tippgeschwindigkeit in Wörtern pro Minute (WPM).",
+        footer: "@ 2026 HerramientasOnline."
     }
 };
 
@@ -121,10 +232,22 @@ const LOCAL_TEMPLATES = {
 ======================== */
 window.addEventListener('DOMContentLoaded', () => {
     // ---- TRADUCTOR ----
-    const langBtn = document.getElementById('lang-toggle');
+    const langSelect = document.getElementById('lang-select');
     let currentLang = localStorage.getItem('app_lang') || 'es';
     
+    // Set the dropdown to saved language
+    if (langSelect) langSelect.value = currentLang;
+    
+    const _t = {
+        es: { calc1: 'Calculadora de Porcentajes', calc2: '¿Cuánto es el...', calc3: 'de la cantidad...', calc4: 'Calcular' },
+        en: { calc1: 'Percentage Calculator', calc2: 'How much is...', calc3: 'of the amount...', calc4: 'Calculate' },
+        pt: { calc1: 'Calculadora de Porcentagem', calc2: 'Quanto é o...', calc3: 'da quantidade...', calc4: 'Calcular' },
+        fr: { calc1: 'Calculatrice de Pourcentage', calc2: 'Combien fait le...', calc3: 'de la quantité...', calc4: 'Calculer' },
+        de: { calc1: 'Prozentrechner', calc2: 'Wie viel sind...', calc3: 'von der Menge...', calc4: 'Berechnen' }
+    };
+
     const applyLanguage = (lang) => {
+        if (!i18n[lang]) lang = 'es';
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if(i18n[lang][key]) el.innerHTML = i18n[lang][key];
@@ -134,21 +257,26 @@ window.addEventListener('DOMContentLoaded', () => {
             if(i18n[lang][key]) el.placeholder = i18n[lang][key];
         });
         
-        // Custom translations for static variables inside tool openers
-        // This handles standard tools that aren't strings
-        window._txt_calc1 = lang === 'es' ? 'Calculadora de Porcentajes' : 'Percentage Calculator';
-        window._txt_calc2 = lang === 'es' ? '¿Cuánto es el...' : 'How much is...';
-        window._txt_calc3 = lang === 'es' ? 'de la cantidad...' : 'of the amount...';
-        window._txt_calc4 = lang === 'es' ? 'Calcular' : 'Calculate';
+        // Update HTML lang attribute
+        document.documentElement.lang = lang;
+        
+        // Custom translations for tool openers
+        const t = _t[lang] || _t['es'];
+        window._txt_calc1 = t.calc1;
+        window._txt_calc2 = t.calc2;
+        window._txt_calc3 = t.calc3;
+        window._txt_calc4 = t.calc4;
     };
     
     applyLanguage(currentLang);
     
-    langBtn.addEventListener('click', () => {
-        currentLang = currentLang === 'es' ? 'en' : 'es';
-        localStorage.setItem('app_lang', currentLang);
-        applyLanguage(currentLang);
-    });
+    if (langSelect) {
+        langSelect.addEventListener('change', (e) => {
+            currentLang = e.target.value;
+            localStorage.setItem('app_lang', currentLang);
+            applyLanguage(currentLang);
+        });
+    }
 
     // ---- MODO OSCURO ----
     const themeBtn = document.getElementById('theme-toggle');
@@ -290,90 +418,148 @@ window.openTool = function(toolId) {
     if (LOCAL_TEMPLATES[toolId]) {
         let htmlCode = LOCAL_TEMPLATES[toolId];
         
-        if (lang === 'en') {
-            htmlCode = htmlCode
-                .replace('Reloj Pomodoro', 'Pomodoro Timer')
-                .replace('Iniciar', 'Start')
-                .replace('Pausar', 'Pause')
-                .replace('Reiniciar', 'Reset')
-                .replace('Gestor de Tareas', 'Task Manager')
-                .replace('¿Qué necesitas hacer?', 'What do you need to do?')
-                .replace('Añadir Tarea', 'Add Task')
-                .replace('Calculadora IMC', 'BMI Calculator')
-                .replace('Peso (kg):', 'Weight (kg):')
-                .replace('Altura (cm):', 'Height (cm):')
-                .replace('Calcular mi IMC', 'Calculate my BMI')
-                .replace('Tu IMC es:', 'Your BMI is:')
-                .replace('Ingresa valores válidos', 'Enter valid values')
-                .replace('Bajo peso', 'Underweight')
-                .replace('Peso Normal', 'Normal Weight')
-                .replace('Sobrepeso', 'Overweight')
-                .replace('Obesidad', 'Obesity')
-                .replace('Conversor de Divisas', 'Currency Converter')
-                .replace('Tasas de cambio aproximadas', 'Approximate exchange rates')
-                .replace('Monto', 'Amount')
-                .replace('Convertir', 'Convert')
-                .replace('Anotador Rápido', 'Quick Notes')
-                .replace('Escribe aquí... (Es temporal y privado)', 'Write here... (It is temporary and private)')
-                .replace('Copiar Todo', 'Copy All')
-                .replace('Borrador auto-guardado 💾', 'Auto-saved draft 💾')
-                .replace('¡Copiado!', 'Copied!')
-                .replace('Generador de Lorem Ipsum', 'Lorem Ipsum Generator')
-                .replace('Generar Párrafos', 'Generate Paragraphs')
-                .replace('El texto aparecerá aquí...', 'Text will appear here...')
-                .replace('Lanzador de Dados', 'Dice Roller')
-                .replace('Lanzar Dado', 'Roll Dice')
-                .replace('Cara o Cruz', 'Heads or Tails')
-                .replace('Lanzar al Aire', 'Flip Coin')
-                .replace('CARA', 'HEADS')
-                .replace('CRUZ', 'TAILS')
-                .replace('Contador de Texto', 'Word Counter')
-                .replace('Pega o escribe tu texto aquí para contarlo...', 'Paste or type your text here to count it...')
-                .replace('Palabras', 'Words')
-                .replace('Caracteres', 'Characters')
-                .replace('Conversor de Unidades', 'Unit Converter')
-                .replace('Longitud', 'Length')
-                .replace('Peso', 'Weight')
-                .replace('Temperatura', 'Temperature')
-                .replace('Valor', 'Value')
-                .replace('Temporizador', 'Countdown Timer')
-                .replace('seg', 'sec')
-                .replace('¡Tiempo terminado!', 'Time is up!')
-                .replace('Número Aleatorio', 'Random Number')
-                .replace('Mínimo:', 'Minimum:')
-                .replace('Máximo:', 'Maximum:')
-                .replace('Generar', 'Generate')
-                .replace('El mínimo debe ser menor al máximo', 'Minimum must be less than maximum')
-                .replace('Codificador Base64', 'Base64 Encoder')
-                .replace('Texto original:', 'Original text:')
-                .replace('Escribe texto aquí...', 'Type text here...')
-                .replace('Codificar →', 'Encode →')
-                .replace('← Decodificar', '← Decode')
-                .replace('Resultado:', 'Result:')
-                .replace('Resultado...', 'Result...')
-                .replace('Copiar Resultado', 'Copy Result')
-                .replace('texto Base64 inválido', 'invalid Base64 text')
-                .replace('Tabla de Multiplicar', 'Times Table')
-                .replace('Ver Tabla', 'Show Table')
-                .replace('Calculadora de Edad', 'Age Calculator')
-                .replace('Fecha de nacimiento:', 'Date of birth:')
-                .replace('Calcular Edad', 'Calculate Age')
-                .replace('Selecciona una fecha', 'Select a date')
-                .replace('Años', 'Years')
-                .replace('Meses', 'Months')
-                .replace('Días', 'Days')
-                .replace('Convertidor de Texto', 'Text Converter')
-                .replace('Escribe o pega tu texto aquí...', 'Type or paste your text here...')
-                .replace('MAYÚSCULAS', 'UPPERCASE')
-                .replace('minúsculas', 'lowercase')
-                .replace('Título', 'Title')
-                .replace('iNVERTIR', 'iNVERT')
-                .replace('Copiar', 'Copy')
-                .replace('Reto de Escritura', 'Typing Test')
-                .replace('El veloz zorro marrón salta sobre el perro perezoso. Los programadores escriben código todos los días para crear aplicaciones increíbles y resolver problemas complejos.', 'The quick brown fox jumps over the lazy dog. Programmers write code every day to create amazing applications and solve complex problems.')
-                .replace('Empieza a escribir aquí... el cronómetro arranca solo', 'Start typing here... the timer starts automatically')
-                .replace('% Precisión', '% Accuracy')
-                .replace('Segundos', 'Seconds');
+        // Multi-language replacements for tool modals (Spanish is the base)
+        if (lang !== 'es') {
+            const TR = {
+                en: {
+                    'Reloj Pomodoro':'Pomodoro Timer','Iniciar':'Start','Pausar':'Pause','Reiniciar':'Reset',
+                    'Gestor de Tareas':'Task Manager','¿Qué necesitas hacer?':'What do you need to do?','Añadir Tarea':'Add Task',
+                    'Calculadora IMC':'BMI Calculator','Peso (kg):':'Weight (kg):','Altura (cm):':'Height (cm):',
+                    'Calcular mi IMC':'Calculate my BMI','Tu IMC es:':'Your BMI is:','Ingresa valores válidos':'Enter valid values',
+                    'Bajo peso':'Underweight','Peso Normal':'Normal Weight','Sobrepeso':'Overweight','Obesidad':'Obesity',
+                    'Conversor de Divisas':'Currency Converter','Tasas de cambio aproximadas':'Approximate exchange rates',
+                    'Monto':'Amount','Convertir':'Convert','Anotador Rápido':'Quick Notes',
+                    'Escribe aquí... (Es temporal y privado)':'Write here... (Temporary and private)',
+                    'Copiar Todo':'Copy All','Borrador auto-guardado 💾':'Auto-saved draft 💾','¡Copiado!':'Copied!',
+                    'Generador de Lorem Ipsum':'Lorem Ipsum Generator','Generar Párrafos':'Generate Paragraphs',
+                    'El texto aparecerá aquí...':'Text will appear here...','Lanzador de Dados':'Dice Roller',
+                    'Lanzar Dado':'Roll Dice','Cara o Cruz':'Heads or Tails','Lanzar al Aire':'Flip Coin',
+                    'CARA':'HEADS','CRUZ':'TAILS','Contador de Texto':'Word Counter',
+                    'Pega o escribe tu texto aquí para contarlo...':'Paste or type your text here...',
+                    'Palabras':'Words','Caracteres':'Characters','Conversor de Unidades':'Unit Converter',
+                    'Longitud':'Length','Peso':'Weight','Temperatura':'Temperature','Valor':'Value',
+                    'Temporizador':'Countdown','¡Tiempo terminado!':'Time is up!',
+                    'Número Aleatorio':'Random Number','Mínimo:':'Minimum:','Máximo:':'Maximum:',
+                    'Generar':'Generate','El mínimo debe ser menor al máximo':'Minimum must be less than maximum',
+                    'Codificador Base64':'Base64 Encoder','Texto original:':'Original text:',
+                    'Escribe texto aquí...':'Type text here...','Codificar →':'Encode →','← Decodificar':'← Decode',
+                    'Resultado:':'Result:','Resultado...':'Result...','Copiar Resultado':'Copy Result',
+                    'texto Base64 inválido':'invalid Base64 text','Tabla de Multiplicar':'Times Table',
+                    'Ver Tabla':'Show Table','Calculadora de Edad':'Age Calculator',
+                    'Fecha de nacimiento:':'Date of birth:','Calcular Edad':'Calculate Age',
+                    'Selecciona una fecha':'Select a date','Años':'Years','Meses':'Months','Días':'Days',
+                    'Convertidor de Texto':'Text Converter','Escribe o pega tu texto aquí...':'Type or paste text here...',
+                    'MAYÚSCULAS':'UPPERCASE','minúsculas':'lowercase','Título':'Title','iNVERTIR':'iNVERT','Copiar':'Copy',
+                    'Reto de Escritura':'Typing Test','% Precisión':'% Accuracy','Segundos':'Seconds',
+                    'El veloz zorro marrón salta sobre el perro perezoso. Los programadores escriben código todos los días para crear aplicaciones increíbles y resolver problemas complejos.':'The quick brown fox jumps over the lazy dog. Programmers write code every day to create amazing applications and solve complex problems.',
+                    'Empieza a escribir aquí... el cronómetro arranca solo':'Start typing here... timer starts automatically'
+                },
+                pt: {
+                    'Reloj Pomodoro':'Relógio Pomodoro','Iniciar':'Iniciar','Pausar':'Pausar','Reiniciar':'Reiniciar',
+                    'Gestor de Tareas':'Gerenciador de Tarefas','¿Qué necesitas hacer?':'O que você precisa fazer?','Añadir Tarea':'Adicionar Tarefa',
+                    'Calculadora IMC':'Calculadora IMC','Peso (kg):':'Peso (kg):','Altura (cm):':'Altura (cm):',
+                    'Calcular mi IMC':'Calcular meu IMC','Tu IMC es:':'Seu IMC é:','Ingresa valores válidos':'Insira valores válidos',
+                    'Bajo peso':'Abaixo do peso','Peso Normal':'Peso Normal','Sobrepeso':'Sobrepeso','Obesidad':'Obesidade',
+                    'Conversor de Divisas':'Conversor de Moedas','Tasas de cambio aproximadas':'Taxas de câmbio aproximadas',
+                    'Monto':'Valor','Convertir':'Converter','Anotador Rápido':'Bloco de Notas',
+                    'Escribe aquí... (Es temporal y privado)':'Escreva aqui... (Temporário e privado)',
+                    'Copiar Todo':'Copiar Tudo','Borrador auto-guardado 💾':'Rascunho auto-salvo 💾','¡Copiado!':'Copiado!',
+                    'Generador de Lorem Ipsum':'Gerador de Lorem Ipsum','Generar Párrafos':'Gerar Parágrafos',
+                    'El texto aparecerá aquí...':'O texto aparecerá aqui...','Lanzador de Dados':'Lançador de Dados',
+                    'Lanzar Dado':'Lançar Dado','Cara o Cruz':'Cara ou Coroa','Lanzar al Aire':'Lançar',
+                    'CARA':'CARA','CRUZ':'COROA','Contador de Texto':'Contador de Texto',
+                    'Pega o escribe tu texto aquí para contarlo...':'Cole ou escreva seu texto aqui...',
+                    'Palabras':'Palavras','Caracteres':'Caracteres','Conversor de Unidades':'Conversor de Unidades',
+                    'Longitud':'Comprimento','Peso':'Peso','Temperatura':'Temperatura','Valor':'Valor',
+                    'Temporizador':'Temporizador','¡Tiempo terminado!':'Tempo esgotado!',
+                    'Número Aleatorio':'Número Aleatório','Mínimo:':'Mínimo:','Máximo:':'Máximo:',
+                    'Generar':'Gerar','El mínimo debe ser menor al máximo':'O mínimo deve ser menor que o máximo',
+                    'Codificador Base64':'Codificador Base64','Texto original:':'Texto original:',
+                    'Escribe texto aquí...':'Escreva texto aqui...','Codificar →':'Codificar →','← Decodificar':'← Decodificar',
+                    'Resultado:':'Resultado:','Resultado...':'Resultado...','Copiar Resultado':'Copiar Resultado',
+                    'texto Base64 inválido':'texto Base64 inválido','Tabla de Multiplicar':'Tabuada',
+                    'Ver Tabla':'Ver Tabuada','Calculadora de Edad':'Calculadora de Idade',
+                    'Fecha de nacimiento:':'Data de nascimento:','Calcular Edad':'Calcular Idade',
+                    'Selecciona una fecha':'Selecione uma data','Años':'Anos','Meses':'Meses','Días':'Dias',
+                    'Convertidor de Texto':'Conversor de Texto','Escribe o pega tu texto aquí...':'Escreva ou cole seu texto aqui...',
+                    'MAYÚSCULAS':'MAIÚSCULAS','minúsculas':'minúsculas','Título':'Título','iNVERTIR':'iNVERTER','Copiar':'Copiar',
+                    'Reto de Escritura':'Teste de Digitação','% Precisión':'% Precisão','Segundos':'Segundos',
+                    'El veloz zorro marrón salta sobre el perro perezoso. Los programadores escriben código todos los días para crear aplicaciones increíbles y resolver problemas complejos.':'A rápida raposa marrom pula sobre o cão preguiçoso. Os programadores escrevem código todos os dias para criar aplicações incríveis e resolver problemas complexos.',
+                    'Empieza a escribir aquí... el cronómetro arranca solo':'Comece a digitar aqui... o cronômetro inicia sozinho'
+                },
+                fr: {
+                    'Reloj Pomodoro':'Minuteur Pomodoro','Iniciar':'Démarrer','Pausar':'Pause','Reiniciar':'Réinitialiser',
+                    'Gestor de Tareas':'Gestionnaire de Tâches','¿Qué necesitas hacer?':'Que devez-vous faire ?','Añadir Tarea':'Ajouter',
+                    'Calculadora IMC':'Calculateur IMC','Peso (kg):':'Poids (kg):','Altura (cm):':'Taille (cm):',
+                    'Calcular mi IMC':'Calculer mon IMC','Tu IMC es:':'Votre IMC est :','Ingresa valores válidos':'Entrez des valeurs valides',
+                    'Bajo peso':'Insuffisance pondérale','Peso Normal':'Poids Normal','Sobrepeso':'Surpoids','Obesidad':'Obésité',
+                    'Conversor de Divisas':'Convertisseur de Devises','Tasas de cambio aproximadas':'Taux de change approximatifs',
+                    'Monto':'Montant','Convertir':'Convertir','Anotador Rápido':'Bloc-Notes',
+                    'Escribe aquí... (Es temporal y privado)':'Écrivez ici... (Temporaire et privé)',
+                    'Copiar Todo':'Tout Copier','Borrador auto-guardado 💾':'Brouillon auto-sauvegardé 💾','¡Copiado!':'Copié !',
+                    'Generador de Lorem Ipsum':'Générateur Lorem Ipsum','Generar Párrafos':'Générer des Paragraphes',
+                    'El texto aparecerá aquí...':'Le texte apparaîtra ici...','Lanzador de Dados':'Lanceur de Dés',
+                    'Lanzar Dado':'Lancer le Dé','Cara o Cruz':'Pile ou Face','Lanzar al Aire':'Lancer',
+                    'CARA':'PILE','CRUZ':'FACE','Contador de Texto':'Compteur de Texte',
+                    'Pega o escribe tu texto aquí para contarlo...':'Collez ou tapez votre texte ici...',
+                    'Palabras':'Mots','Caracteres':'Caractères','Conversor de Unidades':'Convertisseur d\'Unités',
+                    'Longitud':'Longueur','Peso':'Poids','Temperatura':'Température','Valor':'Valeur',
+                    'Temporizador':'Minuteur','¡Tiempo terminado!':'Temps écoulé !',
+                    'Número Aleatorio':'Nombre Aléatoire','Mínimo:':'Minimum :','Máximo:':'Maximum :',
+                    'Generar':'Générer','El mínimo debe ser menor al máximo':'Le minimum doit être inférieur au maximum',
+                    'Codificador Base64':'Encodeur Base64','Texto original:':'Texte original :',
+                    'Escribe texto aquí...':'Tapez du texte ici...','Codificar →':'Encoder →','← Decodificar':'← Décoder',
+                    'Resultado:':'Résultat :','Resultado...':'Résultat...','Copiar Resultado':'Copier le Résultat',
+                    'texto Base64 inválido':'texte Base64 invalide','Tabla de Multiplicar':'Table de Multiplication',
+                    'Ver Tabla':'Voir la Table','Calculadora de Edad':'Calculateur d\'Âge',
+                    'Fecha de nacimiento:':'Date de naissance :','Calcular Edad':'Calculer l\'Âge',
+                    'Selecciona una fecha':'Sélectionnez une date','Años':'Ans','Meses':'Mois','Días':'Jours',
+                    'Convertidor de Texto':'Convertisseur de Texte','Escribe o pega tu texto aquí...':'Tapez ou collez votre texte ici...',
+                    'MAYÚSCULAS':'MAJUSCULES','minúsculas':'minuscules','Título':'Titre','iNVERTIR':'iNVERSER','Copiar':'Copier',
+                    'Reto de Escritura':'Test de Frappe','% Precisión':'% Précision','Segundos':'Secondes',
+                    'El veloz zorro marrón salta sobre el perro perezoso. Los programadores escriben código todos los días para crear aplicaciones increíbles y resolver problemas complejos.':'Le rapide renard brun saute par-dessus le chien paresseux. Les programmeurs écrivent du code chaque jour pour créer des applications incroyables et résoudre des problèmes complexes.',
+                    'Empieza a escribir aquí... el cronómetro arranca solo':'Commencez à taper ici... le chronomètre démarre automatiquement'
+                },
+                de: {
+                    'Reloj Pomodoro':'Pomodoro-Timer','Iniciar':'Starten','Pausar':'Pausieren','Reiniciar':'Zurücksetzen',
+                    'Gestor de Tareas':'Aufgabenmanager','¿Qué necesitas hacer?':'Was müssen Sie tun?','Añadir Tarea':'Hinzufügen',
+                    'Calculadora IMC':'BMI-Rechner','Peso (kg):':'Gewicht (kg):','Altura (cm):':'Größe (cm):',
+                    'Calcular mi IMC':'BMI berechnen','Tu IMC es:':'Ihr BMI ist:','Ingresa valores válidos':'Gültige Werte eingeben',
+                    'Bajo peso':'Untergewicht','Peso Normal':'Normalgewicht','Sobrepeso':'Übergewicht','Obesidad':'Adipositas',
+                    'Conversor de Divisas':'Währungsrechner','Tasas de cambio aproximadas':'Ungefähre Wechselkurse',
+                    'Monto':'Betrag','Convertir':'Umrechnen','Anotador Rápido':'Schnellnotizen',
+                    'Escribe aquí... (Es temporal y privado)':'Hier schreiben... (Temporär und privat)',
+                    'Copiar Todo':'Alles Kopieren','Borrador auto-guardado 💾':'Auto-gespeichert 💾','¡Copiado!':'Kopiert!',
+                    'Generador de Lorem Ipsum':'Lorem Ipsum Generator','Generar Párrafos':'Absätze Generieren',
+                    'El texto aparecerá aquí...':'Der Text erscheint hier...','Lanzador de Dados':'Würfelwerfer',
+                    'Lanzar Dado':'Würfeln','Cara o Cruz':'Kopf oder Zahl','Lanzar al Aire':'Werfen',
+                    'CARA':'KOPF','CRUZ':'ZAHL','Contador de Texto':'Textzähler',
+                    'Pega o escribe tu texto aquí para contarlo...':'Text hier einfügen oder eingeben...',
+                    'Palabras':'Wörter','Caracteres':'Zeichen','Conversor de Unidades':'Einheitenrechner',
+                    'Longitud':'Länge','Peso':'Gewicht','Temperatura':'Temperatur','Valor':'Wert',
+                    'Temporizador':'Countdown','¡Tiempo terminado!':'Zeit abgelaufen!',
+                    'Número Aleatorio':'Zufallszahl','Mínimo:':'Minimum:','Máximo:':'Maximum:',
+                    'Generar':'Generieren','El mínimo debe ser menor al máximo':'Minimum muss kleiner als Maximum sein',
+                    'Codificador Base64':'Base64-Encoder','Texto original:':'Originaltext:',
+                    'Escribe texto aquí...':'Text hier eingeben...','Codificar →':'Kodieren →','← Decodificar':'← Dekodieren',
+                    'Resultado:':'Ergebnis:','Resultado...':'Ergebnis...','Copiar Resultado':'Ergebnis Kopieren',
+                    'texto Base64 inválido':'Ungültiger Base64-Text','Tabla de Multiplicar':'Einmaleins',
+                    'Ver Tabla':'Tabelle Anzeigen','Calculadora de Edad':'Altersrechner',
+                    'Fecha de nacimiento:':'Geburtsdatum:','Calcular Edad':'Alter Berechnen',
+                    'Selecciona una fecha':'Datum auswählen','Años':'Jahre','Meses':'Monate','Días':'Tage',
+                    'Convertidor de Texto':'Textkonverter','Escribe o pega tu texto aquí...':'Text hier eingeben oder einfügen...',
+                    'MAYÚSCULAS':'GROßBUCHSTABEN','minúsculas':'kleinbuchstaben','Título':'Titel','iNVERTIR':'iNVERTIEREN','Copiar':'Kopieren',
+                    'Reto de Escritura':'Tipptest','% Precisión':'% Genauigkeit','Segundos':'Sekunden',
+                    'El veloz zorro marrón salta sobre el perro perezoso. Los programadores escriben código todos los días para crear aplicaciones increíbles y resolver problemas complejos.':'Der schnelle braune Fuchs springt über den faulen Hund. Programmierer schreiben jeden Tag Code, um erstaunliche Anwendungen zu erstellen und komplexe Probleme zu lösen.',
+                    'Empieza a escribir aquí... el cronómetro arranca solo':'Beginnen Sie zu tippen... der Timer startet automatisch'
+                }
+            };
+            const dict = TR[lang];
+            if (dict) {
+                Object.keys(dict).forEach(k => {
+                    htmlCode = htmlCode.split(k).join(dict[k]);
+                });
+            }
         }
 
         modalBody.innerHTML = `
